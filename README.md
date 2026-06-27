@@ -24,14 +24,19 @@
 
 ## 20260627 22:37 update
 
-逆天完了这课程,非要大学最后两门课恶心我一下是吗
-4个综合题,3个求解题,相当于7个大题了呗,70分,不想给分可以不给
-你这样就算了,你还占70%
-范围也不说,问了说是`重点都在平时,考前不划重点`
-确实不用划哈,一个章节能出2-4道大题,全是重点
-而且一个劲吭哧吭哧讲,PPT都讲到第七章了,你连说个考试范围都不说?
-考到哪一章我都不知道
-你这课程学了也没用,复习难度远超408无敌了
+"This course is absolutely unhinged. Is it an absolute must to screw with me on my last two college courses?
+
+4 comprehensive questions, 3 problem-solving questions—so that’s basically 7 massive questions, right? Worth 70 points. If you don't want to give us points, just don't bloody give them!
+
+Fine, I can swallow that, but it actually accounts for 70% of the final grade?!
+
+And they won't even give us a scope for the exam. When asked, they just say, 'The focus is on everyday learning, no specific topics will be highlighted before the exam.'
+
+Oh, sure, no need to highlight anything indeed. 2 to 4 massive questions can come out of just ONE single chapter—everything is a 'key focus' then!
+
+Plus, they just keep chugging along and lecturing like a machine. The PPT is already on Chapter 7, and you haven't said a single word about the exam scope? I don't even know which chapter the exam goes up to!
+
+This course is utterly useless. The review difficulty is way beyond the 408 (CS Joint Qualification Exam), it's just mind-blowingly ridiculous."
 
 ## 开源协议 / License
 
