@@ -24,19 +24,19 @@
 
 ## 20260627 22:37 update
 
-"This course is absolutely unhinged. Is it an absolute must to screw with me on my last two college courses?
+このクソ講義、マジであり得ないんだけど。大学最後の2コマで、わざわざ俺を不快にさせたいわけ？
 
-4 comprehensive questions, 3 problem-solving questions—so that’s basically 7 massive questions, right? Worth 70 points. If you don't want to give us points, just don't bloody give them!
+総合問題4問に計算問題3問って、実質大問7問じゃん。それで70点満点とか、点数あげる気ないなら最初から言うなよ。
 
-Fine, I can swallow that, but it actually accounts for 70% of the final grade?!
+百歩譲ってそこはいいとして、全体の70%も占めるとか正気か？
 
-And they won't even give us a scope for the exam. When asked, they just say, 'The focus is on everyday learning, no specific topics will be highlighted before the exam.'
+試験範囲すら教えてくれないし、聞きに行ったら「大事なところは普段の講義でやってる、テスト前にヤマ張りはしない」だってさ。
 
-Oh, sure, no need to highlight anything indeed. 2 to 4 massive questions can come out of just ONE single chapter—everything is a 'key focus' then!
+確かに範囲絞る必要ないよね、1つの章から大問が2〜4問も出るんだから、全部が「重要」ってことでしょ。
 
-Plus, they just keep chugging along and lecturing like a machine. The PPT is already on Chapter 7, and you haven't said a single word about the exam scope? I don't even know which chapter the exam goes up to!
+しかも、ひたすらマシーンみたいに講義進めやがって、レジュメ（PPT）はもう第7章まで行ってるのに、試験範囲について一言もナシ？こっちは何章までテストに出るのかすら分からないんだけど。
 
-This course is utterly useless. The review difficulty is way beyond the 408 (CS Joint Qualification Exam), it's just mind-blowingly ridiculous."
+この講义、学んでもマジで意味ないわ。復習の難易度、408（計算機科学統一試験）を遥かに超えてて、完全に詰んでる。
 
 ## 开源协议 / License
 
