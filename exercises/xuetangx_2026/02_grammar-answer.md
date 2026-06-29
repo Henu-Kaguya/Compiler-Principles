@@ -66,6 +66,7 @@
 
 > **【解析】**
 > 该文法生成的语言为 $L = \{b^n cc \mid n \ge 0\}$。
+>
 > - ① $cc$：$n=0$，$A \Rightarrow cc$，符合 ✓
 > - ② $bcbc$：不符合 $b^n cc$ 的形式 ✗
 > - ③ $bcbcc$：不符合 $b^n cc$ 的形式（$b$ 和 $c$ 交替出现）✗
@@ -125,6 +126,7 @@
 **1. 设字母表 $\Sigma = \{a, b\}$，$U = \{ab, b\}$，$V = \{aa, bb\}$，求 $UV$, $\Sigma^*$, $\Sigma^+$。**
 
 > **【参考答案】**
+>
 > - $UV = \{abaa, abbb, baa, bbb\}$
 >   - $ab \cdot aa = abaa$
 >   - $ab \cdot bb = abbb$
@@ -151,18 +153,30 @@ $$
 > **(1) $(a, (a, a))$**
 >
 > 最左推导：
-> $$S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (S, S) \Rightarrow (a, S) \Rightarrow (a, (T)) \Rightarrow (a, (T, S)) \Rightarrow (a, (S, S)) \Rightarrow (a, (a, S)) \Rightarrow (a, (a, a))$$
+>
+> $$
+> S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (S, S) \Rightarrow (a, S) \Rightarrow (a, (T)) \Rightarrow (a, (T, S)) \Rightarrow (a, (S, S)) \Rightarrow (a, (a, S)) \Rightarrow (a, (a, a))
+> $$
 >
 > 最右推导：
-> $$S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (T, (T)) \Rightarrow (T, (T, S)) \Rightarrow (T, (T, a)) \Rightarrow (T, (S, a)) \Rightarrow (T, (a, a)) \Rightarrow (S, (a, a)) \Rightarrow (a, (a, a))$$
+>
+> $$
+> S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (T, (T)) \Rightarrow (T, (T, S)) \Rightarrow (T, (T, a)) \Rightarrow (T, (S, a)) \Rightarrow (T, (a, a)) \Rightarrow (S, (a, a)) \Rightarrow (a, (a, a))
+> $$
 >
 > **(2) $(a, (a, \varepsilon))$**
 >
 > 最左推导：
-> $$S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (S, S) \Rightarrow (a, S) \Rightarrow (a, (T)) \Rightarrow (a, (T, S)) \Rightarrow (a, (S, S)) \Rightarrow (a, (a, S)) \Rightarrow (a, (a, \varepsilon))$$
+>
+> $$
+> S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (S, S) \Rightarrow (a, S) \Rightarrow (a, (T)) \Rightarrow (a, (T, S)) \Rightarrow (a, (S, S)) \Rightarrow (a, (a, S)) \Rightarrow (a, (a, \varepsilon))
+> $$
 >
 > 最右推导：
-> $$S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (T, (T)) \Rightarrow (T, (T, S)) \Rightarrow (T, (T, \varepsilon)) \Rightarrow (T, (S, \varepsilon)) \Rightarrow (T, (a, \varepsilon)) \Rightarrow (S, (a, \varepsilon)) \Rightarrow (a, (a, \varepsilon))$$
+>
+> $$
+> S \Rightarrow (T) \Rightarrow (T, S) \Rightarrow (T, (T)) \Rightarrow (T, (T, S)) \Rightarrow (T, (T, \varepsilon)) \Rightarrow (T, (S, \varepsilon)) \Rightarrow (T, (a, \varepsilon)) \Rightarrow (S, (a, \varepsilon)) \Rightarrow (a, (a, \varepsilon))
+> $$
 
 **3. 考虑文法 $G[S]$：**
 
@@ -185,9 +199,13 @@ $$
 **4. 构造一个文法 $G$，使 $L(G) = \{a^n b^n \mid n \ge 1\}$。**
 
 > **【参考答案】**
-> $$G[S]: \quad S \to aSb \mid ab$$
+>
+> $$
+> G[S]: \quad S \to aSb \mid ab
+> $$
 >
 > 验证：
+>
 > - $n = 1$：$S \Rightarrow ab$ ✓
 > - $n = 2$：$S \Rightarrow aSb \Rightarrow aabb$ ✓
 > - $n = 3$：$S \Rightarrow aSb \Rightarrow aaSbb \Rightarrow aaabbb$ ✓
@@ -207,20 +225,49 @@ $$
 **请回答该文法是否为二义文法，说明理由。**
 
 > **【参考答案】**
-> 该文法是二义文法。
+> 该文法是**二义文法**。
 >
-> 分析：考虑由该文法生成的句子，尝试找到一个具有两棵不同语法树的句子。
+> **理由**：若一个文法存在某个句子，该句子有两棵或两棵以上不同的语法树（或两个不同的最左推导/最右推导），则该文法是二义文法。
 >
-> 例如考虑句子 $(i($，其推导过程如下：
-> - 推导一：$E \Rightarrow T \Rightarrow F \Rightarrow E* \Rightarrow T* \Rightarrow iF* \Rightarrow i(* $（但此处需验证 $*$ 是否为终结符）
+> 对于该文法，我们能找到多个具有两棵不同语法树的句子：
 >
-> 由于该文法的产生式较为特殊（$F \to E*$ 和 $F \to ($ 中 $*$ 和 $($ 为终结符），我们考虑句子 $(i($：
-> - 推导路径一：$E \Rightarrow EiT \Rightarrow TiT \Rightarrow FiT \Rightarrow (iT \Rightarrow (iF \Rightarrow (i($
-> - 推导路径二：$E \Rightarrow T \Rightarrow iF \Rightarrow iE* \Rightarrow iT* \Rightarrow iF* \Rightarrow i(*$（此路径不能生成 $(i($）
+> ---
 >
-> 再考虑更简单的方式：对于含有 $E \to EiT \mid T$ 以及 $T \to iF$ 的情况，句子 $(i(i($ 可能存在多种语法树。
+> ### 示例一：句子 $i(\ast$
 >
-> 实际上，由于 $T \to iF$ 和 $T \to F$ 同时存在，对于某些句子中 $i$ 的归约存在歧义：$i$ 既可以作为 $T \to iF$ 中的前缀，也可以作为 $E \to EiT$ 中的中缀运算符。这种双重角色使得某些句子可以有不同的语法树，因此该文法是二义文法。
+> 该句子存在两个不同的最左推导：
+>
+> - **最左推导 1**：
+>   $$
+>   E \Rightarrow T \Rightarrow F \Rightarrow E\ast \Rightarrow T\ast \Rightarrow iF\ast \Rightarrow i(\ast
+>   $$
+>
+> - **最左推导 2**：
+>   $$
+>   E \Rightarrow T \Rightarrow iF \Rightarrow iE\ast \Rightarrow iT\ast \Rightarrow iF\ast \Rightarrow i(\ast
+>   $$
+>
+> 对应的两棵语法树结构不同（第一棵树中，$\ast$ 是在最外层的 $F \to E\ast$ 中引入的；而第二棵树中，$\ast$ 是在 $T \to iF \to iE\ast$ 中引入的）。
+>
+> ---
+>
+> ### 示例二：句子 $i( + (\ast$
+>
+> 该句子也存在两个不同的最左推导，对应不同的结合方式：
+>
+> - **最左推导 1**（将 $+$ 作为最外层算符）：
+>   $$
+>   E \Rightarrow T \Rightarrow T + F \Rightarrow iF + F \Rightarrow i( + F \Rightarrow i( + E\ast \Rightarrow i( + T\ast \Rightarrow i( + F\ast \Rightarrow i( + (\ast
+>   $$
+>
+> - **最左推导 2**（将 $\ast$ 作为最外层算符）：
+>   $$
+>   E \Rightarrow T \Rightarrow iF \Rightarrow iE\ast \Rightarrow i(E i T)\ast \Rightarrow i(T i T)\ast \Rightarrow i(F i T)\ast \Rightarrow i(( i T)\ast \Rightarrow i(( i F)\ast \Rightarrow i(( i (\ast
+>   $$
+>
+> （注：在最左推导 2 中，由于 $E \Rightarrow E i T$，我们可以将 $i$ 解释为 $E \to E i T$ 产生式中的中间终结符，从而把整个表达式包裹在 $\ast$ 运算符内。这与最左推导 1 中直接由 $+$ 联结两个部分的结构不同，因此对应两棵不同的语法树。）
+>
+> 由于对上述句子都可以构造出两棵不同的语法树，因此该文法是二义文法。
 
 **6. 令文法 $G_6$ 为：**
 
@@ -238,30 +285,50 @@ $$
 >
 > **(1)** $L(G_6)$ 是所有由一个或多个十进制数字组成的字符串的集合，即所有非空十进制数字串。
 >
-> $$L(G_6) = \{d_1 d_2 \cdots d_n \mid n \ge 1, \; d_i \in \{0, 1, 2, \ldots, 9\}\}$$
+> $$
+> L(G_6) = \{d_1 d_2 \cdots d_n \mid n \ge 1, \; d_i \in \{0, 1, 2, \ldots, 9\}\}
+> $$
 >
 > **(2)** 最左推导和最右推导如下：
 >
 > **句子 `0127`：**
 >
 > 最左推导：
-> $$N \Rightarrow ND \Rightarrow NDD \Rightarrow NDDD \Rightarrow DDDD \Rightarrow 0DDD \Rightarrow 01DD \Rightarrow 012D \Rightarrow 0127$$
+>
+> $$
+> N \Rightarrow ND \Rightarrow NDD \Rightarrow NDDD \Rightarrow DDDD \Rightarrow 0DDD \Rightarrow 01DD \Rightarrow 012D \Rightarrow 0127
+> $$
 >
 > 最右推导：
-> $$N \Rightarrow ND \Rightarrow N7 \Rightarrow ND7 \Rightarrow N27 \Rightarrow ND27 \Rightarrow N127 \Rightarrow D127 \Rightarrow 0127$$
+>
+> $$
+> N \Rightarrow ND \Rightarrow N7 \Rightarrow ND7 \Rightarrow N27 \Rightarrow ND27 \Rightarrow N127 \Rightarrow D127 \Rightarrow 0127
+> $$
 >
 > **句子 `34`：**
 >
 > 最左推导：
-> $$N \Rightarrow ND \Rightarrow DD \Rightarrow 3D \Rightarrow 34$$
+>
+> $$
+> N \Rightarrow ND \Rightarrow DD \Rightarrow 3D \Rightarrow 34
+> $$
 >
 > 最右推导：
-> $$N \Rightarrow ND \Rightarrow N4 \Rightarrow D4 \Rightarrow 34$$
+>
+> $$
+> N \Rightarrow ND \Rightarrow N4 \Rightarrow D4 \Rightarrow 34
+> $$
 >
 > **句子 `568`：**
 >
 > 最左推导：
-> $$N \Rightarrow ND \Rightarrow NDD \Rightarrow DDD \Rightarrow 5DD \Rightarrow 56D \Rightarrow 568$$
+>
+> $$
+> N \Rightarrow ND \Rightarrow NDD \Rightarrow DDD \Rightarrow 5DD \Rightarrow 56D \Rightarrow 568
+> $$
 >
 > 最右推导：
-> $$N \Rightarrow ND \Rightarrow N8 \Rightarrow ND8 \Rightarrow N68 \Rightarrow D68 \Rightarrow 568$$
+>
+> $$
+> N \Rightarrow ND \Rightarrow N8 \Rightarrow ND8 \Rightarrow N68 \Rightarrow D68 \Rightarrow 568
+> $$
