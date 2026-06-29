@@ -1,3 +1,12 @@
+<!-- 用于vscode插件:`markdown all in one`以及`office viewer`等md导出为pdf功能的换行 -->
+<!-- 但是这个文档不符合规范,应该使用`- `或者`* `列表来实现换行,不过不想改了,快考试了 -->
+<!-- 20260629 23:45 by @Sonder9999 -->
+<style>
+p {
+    white-space: pre-wrap;
+}
+</style>
+
 ### 编译原理期末考试试卷
 **满分：100分**
 
