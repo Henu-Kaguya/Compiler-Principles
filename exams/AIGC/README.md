@@ -1,2 +1,4 @@
 - exams\AIGC\NotebookLM_20260629_paper_A.md 可以不用看,质量并不好
+- exams\AIGC\NotebookLM_20260629_paper_B.md
+  - 这个选择题跟A卷挺像的
 -
