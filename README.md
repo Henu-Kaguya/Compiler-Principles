@@ -111,3 +111,13 @@ bg:上课一节课没听,完全零基础
 ## 开源协议 / License
 
 本项目采用 [CC BY-NC-SA 4.0 (署名-非商业性使用-相同方式共享)](LICENSE) 许可协议。
+
+## 课件下载
+
+课程 PDF 课件已移至 [archive-2026 Release](https://github.com/Henu-Kaguya/Compiler-Principles/releases/tag/archive-2026)。ZIP 只作为 Release 资产发布，不提交回仓库。
+
+| Release 资产 | 内容 |
+|---|---|
+| `compiler-principles-slides.zip` | `slides/` 下 7 个 PDF：`ch01-introduction.pdf`、`ch02-high-level-languages-and-grammars.pdf`、`ch03-lexical-analysis.pdf`、`ch04-syntax-analysis-top-down.pdf`、`ch05-syntax-analysis-bottom-up.pdf` 等 |
+
+`labs/`、`exercises/`、`note/`、`exams/` 中的源码、Markdown、题目和实验说明继续在 Git 中维护。
